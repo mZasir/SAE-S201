@@ -1,4 +1,5 @@
 public class Nombre {
+
     /**
      * Nom du projet : Calculatrice SAE R201
      * Auteurs : Zasir MOINOOTHEEN et Inès MARICSZ
@@ -8,7 +9,7 @@ public class Nombre {
     private int valeurNombre;
 
     public Nombre(int nombre){
-        this.valeurNombre=nombre;
+        this.valeurNombre = nombre;
     }
 
     public int valeur(){
