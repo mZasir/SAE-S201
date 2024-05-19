@@ -1,7 +1,7 @@
 public class Nombre {
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès Marcisz
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARICSZ
      * Date de dernière modification : 2024-05-18
      */
 
@@ -11,7 +11,7 @@ public class Nombre {
         this.valeurNombre=nombre;
     }
 
-    public int Valeur(){
+    public int valeur(){
         return this.valeurNombre;
     }
 
