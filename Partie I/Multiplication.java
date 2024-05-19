@@ -2,7 +2,7 @@ public class Multiplication extends Operation {
 
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès Marcisz
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
 
     public Multiplication (Nombre  nombre1, Nombre nombre2){

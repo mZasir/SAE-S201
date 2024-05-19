@@ -2,7 +2,7 @@ public class Soustraction extends Operation{
     
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès MARICSZ
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
     
      public Soustraction(Nombre nombre1, Nombre nombre2){

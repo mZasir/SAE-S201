@@ -2,7 +2,7 @@ public class Nombre {
 
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès MARICSZ
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
 
     private int valeurNombre;
