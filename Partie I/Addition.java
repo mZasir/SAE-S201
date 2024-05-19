@@ -2,7 +2,7 @@ public class Addition extends Operation {
 
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès Marcisz
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
 
     public Addition (Nombre  nombre1, Nombre nombre2){
