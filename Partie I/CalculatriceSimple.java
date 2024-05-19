@@ -1,7 +1,7 @@
 public class CalculatriceSimple {
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès Marcisz
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
     public static void main (String args[]){
         Nombre six = new Nombre(6) ;
