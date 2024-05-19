@@ -4,7 +4,7 @@ public class CalculatriceSimple {
      * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
     public static void main (String args[]){
-        try{
+        try {
         Nombre six = new Nombre(6) ;
         Nombre dix = new Nombre(10) ;
         Operation s = new Soustraction(dix, six) ;
@@ -22,7 +22,7 @@ public class CalculatriceSimple {
         Nombre zero = new Nombre(0) ;
         Nombre sept = new Nombre(7) ;
 
-        try{
+        try {
             Operation div2 = new Division(sept, zero) ;
             System.out.println(div2 + " = " + div2.valeur()) ; 
         } catch (ArithmeticException e){
@@ -31,10 +31,10 @@ public class CalculatriceSimple {
         
         Operation div = new Division(zero, sept) ;
         System.out.println(div + " = " + div.valeur()) ; // doit afficher : (0 / 7) = 0
+
         } catch (Exception e) {
-            System.out.println("Il y a une erreur : " + e) ;
+            System.out.println("Il y a eu une erreur : " + e) ;
         }
-    
 
     }
 }
