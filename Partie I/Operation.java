@@ -1,7 +1,8 @@
 public abstract class Operation {
+    
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès Marcisz
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARICSZ
      * Date de dernière modification : 2024-05-18
      */
 
