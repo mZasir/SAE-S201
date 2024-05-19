@@ -2,7 +2,7 @@ public class Division extends Operation{
     
     /**
      * Nom du projet : Calculatrice SAE R201
-     * Auteurs : Zasir MOINOOTHEEN et Inès MARICSZ
+     * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
     
      public Division(Nombre nombre1, Nombre nombre2) throws ArithmeticException{
