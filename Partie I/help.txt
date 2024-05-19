@@ -1,0 +1,98 @@
+Projet : Ma calculatrice SAE R201
+
+Description du projet : Modélisation en UML et code en java d'une calculatrice effectuant des opérations sur des nombres entiers.
+
+Description des classes : 
+
+- Classe Nombre : Représente un nombre entier.
+
+Attributs: - valeurNombre : La valeur du nombre entier.
+
+Méthodes: - Nombre (int nombre) : Constructeur qui initialise valeurNombre avec la valeur donnée.
+          - int Valeur () : Retourne la valeur du nombre.
+          - String toString() : Retourne une chaîne de caractères représentant la valeur du nombre.
+
+
+- Classe abstraite Operation : Classe abstraite représentant une opération binaire entre deux nombres entiers.
+
+Attributs : - operande_1 : Premier opérande de type Nombre.
+            - operande_2 : Deuxième opérande de type Nombre.
+
+Méthodes : - Operation(Nombre nombre1, Nombre nombre2) : Constructeur qui initialise les opérandes.
+  	   - abstract int valeur() : Méthode abstraite devant être implémentée par les sous-classes pour calculer le résultat de l'opération.
+ 	   - Nombre getOperande1() : Retourne la première opérande.
+	   - Nombre getOperande2() : Retourne la deuxième opérande.
+
+
+- Classe Addition : Représente une addition entre deux nombres entiers.
+
+Méthodes : - Addition(Nombre nombre1, Nombre nombre2) : Constructeur qui appelle le constructeur de la superclasse Operation.
+  	   - int valeur() : Retourne la somme des valeurs des deux opérandes.
+  	   - String toString() : Retourne une chaîne de caractères représentant l'addition.
+
+
+- Classe Soustraction : Représente une soustraction entre deux nombres entiers.
+
+Méthodes : - Soustraction(Nombre nombre1, Nombre nombre2) : Constructeur qui appelle le constructeur de la superclasse Operation.
+	   - int valeur() : Retourne la différence entre les valeurs des deux opérandes.
+ 	   - String toString() : Retourne une chaîne de caractères représentant la soustraction.
+
+
+- Classe Multiplication : Représente une multiplication entre deux nombres entiers.
+
+Méthodes : - Multiplication(Nombre nombre1, Nombre nombre2) : Constructeur qui appelle le constructeur de la superclasse Operation.
+           - int valeur() : Retourne le produit des valeurs des deux opérandes.
+  	   - String toString() : Retourne une chaîne de caractères représentant la multiplication.
+
+
+- Classe Division : Représente une opération de division. Vérifie que le dénominateur ne soit pas égal à 0 afin d’éviter une erreur.
+
+Méthodes : - Division(Nombre nombre1, Nombre nombre2) : Constructeur qui appelle le constructeur de la superclasse Operation et lance une ArithmeticException si le dénominateur est nul.
+  	   - int valeur() : Retourne le quotient des valeurs des deux opérandes.
+  	   - String toString() : Retourne une chaîne de caractères représentant la division.
+
+
+- Classe CalculatriceSimple : Contient la méthode `main` pour tester les opérations de la calculatrice.
+
+Méthodes : - static void main(String[] args) : Méthode principale qui crée des instances de Nombre et des différentes opérations, et affiche les résultats. Gère les exceptions pour les divisions par zéro.
+
+
+Voici un exemple d'utilisation dans la méthode main de CalculatriceSimple :
+
+
+public class CalculatriceSimple {
+    public static void main(String[] args) {
+        try {
+            // Création des nombres
+            Nombre six = new Nombre(6);
+            Nombre dix = new Nombre(10);
+            Nombre zero = new Nombre(0);
+
+            // Test des opérations
+            Operation addition = new Addition(dix, six);
+            System.out.println(addition + " = " + addition.valeur());
+
+            Operation soustraction = new Soustraction(dix, six);
+            System.out.println(soustraction + " = " + soustraction.valeur());
+
+            Operation multiplication = new Multiplication(dix, six);
+            System.out.println(multiplication + " = " + multiplication.valeur());
+
+            try {
+                 Operation division = new Division(dix, zero);
+                 System.out.println(division + " = " + division.valeur());
+            } catch (ArithmeticException e) {
+                System.out.println("Erreur lors de la division : " + e.getMessage());
+            }
+
+            Operation divisionValide = new Division(dix, six);
+            System.out.println(divisionValide + " = " + divisionValide.valeur());
+
+        } catch (Exception e) {
+            System.out.println("Erreur inattendue : " + e.getMessage());
+        }
+    }
+}
+
+
+
