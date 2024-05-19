@@ -18,4 +18,5 @@ public class Nombre {
     public String toString(){
         return ("Le nombre est :" + this.valeurNombre);
     }
+
 }
