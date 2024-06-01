@@ -1,5 +1,3 @@
-import java.beans.Expression;
-
 public class Multiplication extends Operation {
 
     /**

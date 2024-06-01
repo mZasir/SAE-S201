@@ -1,5 +1,3 @@
-import java.beans.Expression;
-
 public class Division extends Operation{
     
     /**
@@ -8,7 +6,7 @@ public class Division extends Operation{
      */
     
      public Division(Expression op1, Expression op2) throws ArithmeticException{
-        super(op1, op2);
+        super (op1, op2);
         if (op2.valeur() == 0){
             throw new ArithmeticException ("ERREUR : DIVISION PAR 0 !");
         }
