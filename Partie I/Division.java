@@ -17,10 +17,6 @@ public class Division extends Operation{
      }
 
      public String toString(){
-<<<<<<< HEAD
         return "(" + this.getOperande1().valeur() + "/" + this.getOperande2().valeur() + ")";
-=======
-        return "(" + this.getOperande1().valeur() + "/" + this.getOperande2().valeur() + ")" ;
->>>>>>> bafdff805a20311d2ce4446c2d4b3b06c0b0d138
      }
 }
