@@ -1,3 +1,5 @@
+import java.beans.Expression;
+
 public class Multiplication extends Operation {
 
     /**
@@ -5,8 +7,8 @@ public class Multiplication extends Operation {
      * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
 
-    public Multiplication (Nombre  nombre1, Nombre nombre2){
-        super (nombre1, nombre2) ;
+    public Multiplication (Expression op1, Expression op2){
+        super (op1, op2) ;
     }
 
     public int valeur (){
