@@ -13,7 +13,7 @@ public abstract class Operation {
         this.operande_2 = nombre2;
     }
 
-    public abstract int valeur();
+    public abstract double valeur();
 
     public Nombre getOperande1(){
         return this.operande_1;
