@@ -1,4 +1,4 @@
-public abstract class Operation {
+public abstract class Operation extends Expression{
     
     /**
      * Nom du projet : Calculatrice SAE R201

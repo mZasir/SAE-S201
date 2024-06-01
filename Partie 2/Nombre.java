@@ -1,4 +1,4 @@
-public class Nombre {
+public class Nombre extends Expression{
 
     /**
      * Nom du projet : Calculatrice SAE R201
