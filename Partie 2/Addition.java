@@ -9,7 +9,7 @@ public class Addition extends Operation {
         super (op1, op2) ;
     }
 
-    public int valeur (){
+    public double valeur (){
         return this.getOperande1().valeur() + this.getOperande2().valeur() ;
     }
 

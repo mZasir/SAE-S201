@@ -5,13 +5,13 @@ public class Nombre {
      * Auteurs : Zasir MOINOOTHEEN et Inès MARCISZ
      */
 
-    private int valeurNombre;
+    private double valeurNombre;
 
     public Nombre(int nombre){
         this.valeurNombre = nombre;
     }
 
-    public int valeur(){
+    public double valeur(){
         return this.valeurNombre;
     }
 

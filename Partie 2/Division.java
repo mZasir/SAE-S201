@@ -14,7 +14,7 @@ public class Division extends Operation{
         }
      }
 
-     public int valeur(){
+     public double valeur(){
         return this.getOperande1().valeur() / this.getOperande2().valeur();
      }
 
