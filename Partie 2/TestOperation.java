@@ -54,12 +54,12 @@ public class TestOperation {
             return new Nombre(Integer.parseInt(e));
         }
     
-        // Retirer les parenthèses extérieures si présentes
+        // Retire les parenthèses extérieures si présentes
         if ( e.charAt(0) == '(' && e.charAt(e.length()-1) == ')' ){
             e = e.substring(1, e.length() - 1);
         }
     
-        // Trouver l'opérateur principal en respectant les parenthèses
+        // Trouve l'opérateur principal en respectant les parenthèses
         int nbParentheses = 0;
         for (int i = 0; i < e.length(); i++) {
             char c = e.charAt(i);
@@ -68,7 +68,7 @@ public class TestOperation {
             } else if (c == ')') {
                 nbParentheses--;
             } else if (nbParentheses == 0 && (c == '+' || c == '-' || c == '*' || c == '/')) {
-                // Découper l'expression en opérandes gauche et droite
+                // Découpe l'expression en opérandes gauche et droite
                 String opGauche = e.substring(0, i);
                 String opDroite = e.substring(i + 1);
 
