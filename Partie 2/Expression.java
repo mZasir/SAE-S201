@@ -1,4 +1,5 @@
 public abstract class Expression {
     
     public abstract double valeur();
+    public abstract String toString();
 }
