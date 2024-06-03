@@ -5,6 +5,7 @@ public class TestOperation {
      */
     public static void main (String args[]){
         try { 
+        Expression zero = new Nombre (0) ;
         Expression huit = new Nombre(8) ;
         Expression onze = new Nombre(11) ;
         Expression cinq = new Nombre(15) ;
@@ -17,7 +18,6 @@ public class TestOperation {
         Expression dixSept = new Nombre(17) ;
 
         try{
-            Expression zero = new Nombre (0) ;
             Expression d = new Division (m, zero) ;
             System.out.println(d + "=" + d.valeur()) ; 
         } catch (ArithmeticException e) {
