@@ -6,16 +6,17 @@ public class TestOperation {
     public static void main (String args[]){
         try { 
         Expression zero = new Nombre (0) ;
-        Expression huit = new Nombre(8) ;
-        Expression onze = new Nombre(11) ;
-        Expression cinq = new Nombre(15) ;
-        Expression m = new Multiplication(huit, onze) ;
-        Expression m2 = new Multiplication (m, cinq) ;
-        System.out.println(m2 + "=" + m2.valeur()); // affiche (8 * 11) * 15 = 440
-
         Expression deux = new Nombre(2) ;
         Expression trois = new Nombre(3) ;
+        Expression huit = new Nombre(8) ;
+        Expression onze = new Nombre(11) ;
+        Expression quinze = new Nombre(15) ;
         Expression dixSept = new Nombre(17) ;
+
+        Expression m = new Multiplication(huit, onze) ;
+        Expression m2 = new Multiplication (m, quinze) ;
+        System.out.println(m2 + "=" + m2.valeur()); // affiche (8 * 11) * 15 = 440
+ 
 
         try{
             Expression d = new Division (m, zero) ;
