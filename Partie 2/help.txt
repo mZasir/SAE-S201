@@ -1,0 +1,59 @@
+Projet : Ma calculatrice SAE R201
+
+Description du projet : Modélisation en UML et code en java d'une calculatrice effectuant des opérations sur des nombres entiers.
+
+Description des classes : 
+
+- Classe Nombre : Représente un nombre entier.
+
+Attributs: - valeurNombre : La valeur du nombre entier.
+
+Méthodes: - Nombre (int nombre) : Constructeur qui initialise valeurNombre avec la valeur donnée.
+          - double Valeur () : Retourne la valeur du nombre.
+          - String toString() : Retourne une chaîne de caractères représentant la valeur du nombre.
+
+- Classe abstraite Expression : Classe abstraite représentant une expression mathématique.
+
+
+- Classe abstraite Operation : Classe abstraite représentant une opération entre deux opérandes (nombre ou opération).
+
+Attributs : - operande_1 : Premier opérande de type Expression.
+            - operande_2 : Deuxième opérande de type Expression.
+
+Méthodes : - Operation(Expression op1, Expression op2) : Constructeur qui initialise les opérandes.
+  	   - abstract double valeur() : Méthode abstraite devant être implémentée par les sous-classes pour calculer le résultat de l'opération.
+ 	   - Nombre getOperande1() : Retourne la première opérande.
+	   - Nombre getOperande2() : Retourne la deuxième opérande.
+
+
+- Classe Addition : Représente une addition entre deux opérandes.
+
+Méthodes : - Addition(Expression op1, Expression op2) : Constructeur qui appelle le constructeur de la superclasse Operation.
+  	   - double valeur() : Retourne la somme des valeurs des deux opérandes.
+  	   - String toString() : Retourne une chaîne de caractères représentant l'addition.
+
+
+- Classe Soustraction : Représente une soustraction entre deux opérandes.
+
+Méthodes : - Soustraction(Expression op1, Expression op2) : Constructeur qui appelle le constructeur de la superclasse Operation.
+	   - double valeur() : Retourne la différence entre les valeurs des deux opérandes.
+ 	   - String toString() : Retourne une chaîne de caractères représentant la soustraction.
+
+
+- Classe Multiplication : Représente une multiplication entre deux opérandes.
+
+Méthodes : - Multiplication(Expression op1, Expression op2) : Constructeur qui appelle le constructeur de la superclasse Operation.
+           - double valeur() : Retourne le produit des valeurs des deux opérandes.
+  	   - String toString() : Retourne une chaîne de caractères représentant la multiplication.
+
+
+- Classe Division : Représente une division. Vérifie que le dénominateur ne soit pas égal à 0 afin d’éviter une erreur.
+
+Méthodes : - Division(Expression op1, Expression op2) : Constructeur qui appelle le constructeur de la superclasse Operation et lance une ArithmeticException si le dénominateur est nul.
+  	   - double valeur() : Retourne le quotient des valeurs des deux opérandes.
+  	   - String toString() : Retourne une chaîne de caractères représentant la division.
+
+
+- Classe TestOperation : Contient la méthode `main` pour tester les opérations de la calculatrice.
+
+Méthodes : - static void main(String[] args) : Méthode principale qui crée des instances d'Expression et différentes opérations, et affiche les résultats. Gère les exceptions pour les divisions par zéro.
