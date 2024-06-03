@@ -7,7 +7,7 @@ public class TestOperation {
         try { 
         Expression huit = new Nombre(8) ;
         Expression onze = new Nombre(11) ;
-        Expression cinq = new Nombre(15 ;
+        Expression cinq = new Nombre(15) ;
         Expression m = new Multiplication(huit, onze) ;
         Expression m2 = new Multiplication (m, cinq) ;
         System.out.println(m2 + "=" + m2.valeur()); // affiche (8 * 11) * 5 = 440
@@ -21,7 +21,7 @@ public class TestOperation {
         System.out.println(d + " = " + d.valeur()) ; // affiche ((17 - 2) / (2 + 3)) = 3 
 
         Expression zero = new Nombre (0) ;
-        Expression d = new Division (m, zero) ;
+        Expression d2 = new Division (m, zero) ;
         System.out.println(d + "=" + d.valeur()) ; 
 
     } catch (Exception e) {
