@@ -14,6 +14,6 @@ public class Addition extends Operation {
     }
 
     public String toString (){
-        return "(" + this.getOperande1().valeur() + "+" + this.getOperande2().valeur() + ")";
+        return "(" + this.getOperande1() + "+" + this.getOperande2() + ")";
     }
 }
