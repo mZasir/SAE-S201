@@ -31,6 +31,8 @@ public class TestOperation {
 
         // Test FabriqueExpression
         
+        System.out.println("\n Test de la méthode fabriqueExpression :");
+
         String expressionStr = "((8*11)*15)";
         Expression expression = fabriqueExpression(expressionStr);
         System.out.println(expression + " = " + expression.valeur());
