@@ -1,4 +1,4 @@
-**Calculatrice Simple en Java**
+# **Calculatrice simple en Java**
 
 Ce projet consiste en une calculatrice simple développée en Java, capable d'effectuer des opérations arithmétiques de base sur des nombres entiers.
 
